@@ -145,6 +145,7 @@ class _HomepageState extends State<Homepage> {
                               game.title == featuredGames[selectedGame].title;
                           double circleRadius = deviceHeight * 0.004;
                           return Container(
+                            margin: EdgeInsets.only(right: deviceWidth * 0.015),
                             height: circleRadius * 2,
                             width: circleRadius * 2,
                             decoration: BoxDecoration(

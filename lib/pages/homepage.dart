@@ -116,12 +116,15 @@ class _HomepageState extends State<Homepage> {
                             size: 30,
                           ),
                         ],
-                      )
+                      ),
                     ],
                   ),
                 ),
                 SizedBox(
                   height: deviceHeight * 0.13,
+                ),
+                SizedBox(
+                  height: deviceHeight * 0.14,
                   width: deviceWidth,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -135,6 +138,9 @@ class _HomepageState extends State<Homepage> {
                           color: Colors.white,
                           fontSize: deviceHeight * 0.040,
                         ),
+                      ),
+                      SizedBox(
+                        height: deviceHeight * 0.01,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,

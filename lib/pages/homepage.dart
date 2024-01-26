@@ -141,12 +141,14 @@ class _HomepageState extends State<Homepage> {
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: featuredGames.map((game) {
+                          bool isActive =
+                              game.title == featuredGames[selectedGame].title;
                           double circleRadius = deviceHeight * 0.004;
                           return Container(
                             height: circleRadius * 2,
                             width: circleRadius * 2,
                             decoration: BoxDecoration(
-                              color: Colors.grey,
+                              color: isActive ? Colors.green : Colors.grey,
                               borderRadius: BorderRadius.circular(100),
                             ),
                           );

@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:gamify_app/data.dart';
+import 'package:gamify_app/widgets/scrollable_games_widget.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -164,9 +165,13 @@ class _HomepageState extends State<Homepage> {
                     ],
                   ),
                 ),
+
+                //scrollable column 1
+                ScrollableGamesWidget(
+                    deviceHeight * 0.24, deviceWidth, true, games),
               ],
             ),
-          )
+          ),
         ],
       ),
     );

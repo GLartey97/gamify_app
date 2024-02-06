@@ -167,8 +167,15 @@ class _HomepageState extends State<Homepage> {
                 ),
 
                 //scrollable column 1
-                ScrollableGamesWidget(
-                    deviceHeight * 0.24, deviceWidth, true, games),
+                Padding(
+                  padding: EdgeInsets.symmetric(vertical: deviceHeight * 0.01),
+                  child: ScrollableGamesWidget(
+                    deviceHeight * 0.24,
+                    deviceWidth,
+                    true,
+                    games,
+                  ),
+                ),
               ],
             ),
           ),

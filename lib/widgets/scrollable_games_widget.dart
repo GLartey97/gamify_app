@@ -14,14 +14,16 @@ class ScrollableGamesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: height,
+      height: height * 1.04,
       width: width,
       child: ListView(
+        physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         children: gameData.map((game) {
-          return SizedBox(
+          return Container(
             height: height,
             width: width * 0.30,
+            padding: EdgeInsets.only(right: width * 0.03),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               mainAxisSize: MainAxisSize.max,
@@ -31,11 +33,19 @@ class ScrollableGamesWidget extends StatelessWidget {
                   height: height * 0.80,
                   width: width * 0.45,
                   decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
                     image: DecorationImage(
+                      fit: BoxFit.cover,
                       image: NetworkImage(game.coverImage.url),
                     ),
                   ),
                 ),
+                Text(
+                  game.title,
+                  maxLines: 2,
+                  style:
+                      TextStyle(color: Colors.white, fontSize: height * 0.08),
+                )
               ],
             ),
           );

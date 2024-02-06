@@ -30,7 +30,7 @@ class _HomepageState extends State<Homepage> {
     return Scaffold(
       body: Stack(
         children: [
-          //Featured Games Background
+          //First Panel: Featured Games
           SizedBox(
             height: deviceHeight * 0.50,
             width: deviceWidth,
@@ -74,7 +74,7 @@ class _HomepageState extends State<Homepage> {
             ),
           ),
 
-          //TopLayer
+          //TopLayer features (menu, search and notifications)
           Padding(
             padding: EdgeInsets.symmetric(
               horizontal: deviceWidth * 0.05,
@@ -121,9 +121,13 @@ class _HomepageState extends State<Homepage> {
                     ],
                   ),
                 ),
+
+                //Space Top layer and Game Title
                 SizedBox(
                   height: deviceHeight * 0.13,
                 ),
+
+                //Game Title and Switch bubbles
                 SizedBox(
                   height: deviceHeight * 0.14,
                   width: deviceWidth,
@@ -166,7 +170,7 @@ class _HomepageState extends State<Homepage> {
                   ),
                 ),
 
-                //scrollable column 1
+                //Second Panel: Scrollable Featured Games
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: deviceHeight * 0.01),
                   child: ScrollableGamesWidget(

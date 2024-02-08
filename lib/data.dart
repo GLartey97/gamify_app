@@ -106,7 +106,7 @@ List<Game> featuredGames = [
   Game(
     "Dragon Ball Z: Kakarot",
     GameImage(
-        "https://upload.wikimedia.org/wikipedia/en/e/e4/Dragon_Ball_Z_Kakarot_logo.png",
+        "https://w0.peakpx.com/wallpaper/575/52/HD-wallpaper-dragonball-z-kakarot-anime-consoles-dragon-ball-z-ps4-video-game-xbox.jpg",
         ""),
     "",
     "CyberConnect2",

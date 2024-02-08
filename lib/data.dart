@@ -61,22 +61,25 @@ List<Game> games2 = [
   ),
   Game(
     "The Last of Us Part II",
-    GameImage("https://mvpo.us/img/P6253.jpg", ""),
+    GameImage(
+        "https://upload.wikimedia.org/wikipedia/en/4/4f/TLOU_P2_Box_Art_2.png",
+        ""),
     "",
     "Naughty Dog",
   ),
   Game(
     "Sekiro: Shadows Die Twice",
     GameImage(
-        "https://onlysp.escapistmagazine.com/wp-content/uploads/2019/03/Sekiro-Shadows-Die-Twice-logo-art.jpg",
-        ""),
+      "https://upload.wikimedia.org/wikipedia/en/6/6e/Sekiro_art.jpg",
+      "",
+    ),
     "",
     "From Software",
   ),
   Game(
     "Just Cause 4",
     GameImage(
-        "https://s3.gaming-cdn.com/images/products/2666/orig/just-cause-4-cover.jpg",
+        "https://upload.wikimedia.org/wikipedia/en/0/0f/Just_Cause_4_cover.jpg",
         ""),
     "",
     "Avalanche Studios",
@@ -103,7 +106,7 @@ List<Game> featuredGames = [
   Game(
     "Dragon Ball Z: Kakarot",
     GameImage(
-        "https://cdn3.dualshockers.com/wp-content/uploads/2020/01/dbx-kakarot.png",
+        "https://upload.wikimedia.org/wikipedia/en/e/e4/Dragon_Ball_Z_Kakarot_logo.png",
         ""),
     "",
     "CyberConnect2",

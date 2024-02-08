@@ -193,6 +193,14 @@ class _HomepageState extends State<Homepage> {
                     ),
                   ),
                 ),
+
+                //Last panel: Second Featured Games
+                ScrollableGamesWidget(
+                  deviceHeight * 0.18,
+                  deviceWidth,
+                  false,
+                  games2,
+                ),
               ],
             ),
           ),

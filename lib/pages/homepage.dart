@@ -180,6 +180,19 @@ class _HomepageState extends State<Homepage> {
                     games,
                   ),
                 ),
+
+                //Third Panel: Featured Game
+                Container(
+                  height: deviceHeight * 0.13,
+                  width: deviceWidth,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: NetworkImage(featuredGames[3].coverImage.url),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
